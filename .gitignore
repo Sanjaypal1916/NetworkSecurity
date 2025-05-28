@@ -1,0 +1,4 @@
+venv/
+logger/
+network_data/
+.env/
