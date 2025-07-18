@@ -179,7 +179,7 @@ class ModelTrainer:
             network_model = NetworkModel(preprocessor=preprocessor, model=best_model)
             save_object(self.model_trainer_config.trained_model_file_path, obj=network_model)
             save_object("final_model/model.pkl", best_model)
-
+            save_object("final_model/preprocessor.pkl", preprocessor)
 
             self.track_mlflow(best_model, train_metrics)
             self.track_mlflow(best_model, test_metrics)
