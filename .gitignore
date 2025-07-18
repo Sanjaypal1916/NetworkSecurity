@@ -1,4 +1,6 @@
 venv/
+.env/
 logger/
 network_data/
 .env/
+Artifacts/

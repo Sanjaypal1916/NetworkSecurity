@@ -1,0 +1,13 @@
+
+pandas 
+numpy 
+scikit-learn
+pymongo[srv]
+dotenv
+certifi
+pymongo
+PyYAML
+dagshub
+
+
+# -e . 
