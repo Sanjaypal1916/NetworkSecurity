@@ -8,6 +8,7 @@ certifi
 pymongo
 PyYAML
 dagshub
-
+mlflow
+optuna
 
 # -e . 

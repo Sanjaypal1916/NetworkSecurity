@@ -1,0 +1,27 @@
+[ 2025-07-18 15:43:39,022 ] 1025 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+[ 2025-07-18 15:43:39,030 ] 107 dagshub - INFO - Accessing as sanjaypal1916
+[ 2025-07-18 15:43:39,536 ] 1025 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/repos/sanjaypal1916/NetworkSecurity "HTTP/1.1 200 OK"
+[ 2025-07-18 15:43:39,921 ] 1025 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+[ 2025-07-18 15:43:39,926 ] 107 dagshub - INFO - Initialized MLflow to track repo "sanjaypal1916/NetworkSecurity"
+[ 2025-07-18 15:43:39,928 ] 107 dagshub - INFO - Repository sanjaypal1916/NetworkSecurity initialized!
+[ 2025-07-18 15:43:39,929 ] 27 root - INFO - Initiate the data ingestion
+[ 2025-07-18 15:43:45,750 ] 51 root - INFO - fetching the information from the database
+[ 2025-07-18 15:43:45,953 ] 65 root - INFO - Exported to Feature store directory
+[ 2025-07-18 15:43:45,954 ] 74 root - INFO - initiating Data Ingestion
+[ 2025-07-18 15:43:45,954 ] 81 root - INFO - creating directory for train and test
+[ 2025-07-18 15:43:45,956 ] 85 root - INFO - spliting the data into train and test
+[ 2025-07-18 15:43:45,965 ] 88 root - INFO - loading the data to train.csv and test.csv
+[ 2025-07-18 15:43:46,218 ] 92 root - INFO - completion of ingested directory
+[ 2025-07-18 15:43:46,220 ] 29 root - INFO - Data Initiation Completed
+[ 2025-07-18 15:43:46,229 ] 40 root - INFO - Initiate the data Validation
+[ 2025-07-18 15:43:46,726 ] 42 root - INFO - data Validation Completed
+[ 2025-07-18 15:43:46,726 ] 47 root - INFO - initiated data transformation
+[ 2025-07-18 15:43:46,817 ] 45 root - INFO - Created Pipeline using KNNImputer
+[ 2025-07-18 15:43:46,849 ] 45 root - INFO - Entered the save_object method of MainUtils class
+[ 2025-07-18 15:43:46,854 ] 49 root - INFO - Exited the save_object method of MainUtils class
+[ 2025-07-18 15:43:46,854 ] 82 root - INFO - Data Transformation Completed Successfully
+[ 2025-07-18 15:43:46,856 ] 49 root - INFO - data transformation completed
+[ 2025-07-18 15:43:46,857 ] 52 root - INFO - Model Training sstared
+[ 2025-07-18 15:43:46,881 ] 73 root - INFO - Starting Optuna hyperparameter tuning...
+[ 2025-07-18 15:44:06,387 ] 128 root - INFO - \u2705 Best Model: Random Forest | R2 Score: 0.9559316522419238
+[ 2025-07-18 15:44:06,388 ] 129 root - INFO - \u2705 Best Params: {'model': 'Random Forest', 'rf_n_estimators': 16, 'rf_criterion': 'gini'}

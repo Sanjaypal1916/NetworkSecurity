@@ -6,7 +6,7 @@ import pymongo
 
 from network_sec.components.data_ingestion import DataIngestion
 from network_sec.components.data_validation import dataValidation
-from network_sec.components.data_transformation import data_transformation
+from network_sec.components.data_transformation import DataTransformation
 from network_sec.exception.exception import NetworkSecurityException
 from network_sec.logs.logger import logging
 from network_sec.entity.config_entity import dataIngestionConfig,dataValidationConfig, dataTransformationConfig
@@ -43,7 +43,7 @@ if __name__=='__main__':
         print(data_validation_artifact)
 
         data_transformation_config=dataTransformationConfig(trainingpipelineconfig)
-        dataTransformation=data_transformation(dataingestionartifact,data_validation_config)
+        dataTransformation=DataTransformation(data_validation_artifact,data_transformation_config)
         logging.info("initiated data transformation")
         data_tranformation_artifact=dataTransformation.initiate_data_transformation()
         logging.info("data transformation completed")
@@ -51,7 +51,7 @@ if __name__=='__main__':
 
         logging.info("Model Training sstared")
         model_trainer_config=ModelTrainerConfig(trainingpipelineconfig)
-        model_trainer=ModelTrainer(model_trainer_config=model_trainer_config,data_transformation_artifact=data_transformation_artifact)
+        model_trainer=ModelTrainer(model_trainer_config=model_trainer_config,data_transformation_artifact=data_tranformation_artifact)
         model_trainer_artifact=model_trainer.initiate_model_trainer()
 
         logging.info("Model Training artifact created")

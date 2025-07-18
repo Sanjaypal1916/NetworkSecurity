@@ -1,0 +1,18 @@
+[ 2025-07-18 14:59:04,537 ] 1025 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+[ 2025-07-18 14:59:04,548 ] 107 dagshub - INFO - Accessing as sanjaypal1916
+[ 2025-07-18 14:59:05,101 ] 1025 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/repos/sanjaypal1916/NetworkSecurity "HTTP/1.1 200 OK"
+[ 2025-07-18 14:59:05,477 ] 1025 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+[ 2025-07-18 14:59:05,481 ] 107 dagshub - INFO - Initialized MLflow to track repo "sanjaypal1916/NetworkSecurity"
+[ 2025-07-18 14:59:05,483 ] 107 dagshub - INFO - Repository sanjaypal1916/NetworkSecurity initialized!
+[ 2025-07-18 14:59:05,493 ] 27 root - INFO - Initiate the data ingestion
+[ 2025-07-18 14:59:11,093 ] 51 root - INFO - fetching the information from the database
+[ 2025-07-18 14:59:11,281 ] 65 root - INFO - Exported to Feature store directory
+[ 2025-07-18 14:59:11,281 ] 74 root - INFO - initiating Data Ingestion
+[ 2025-07-18 14:59:11,281 ] 81 root - INFO - creating directory for train and test
+[ 2025-07-18 14:59:11,282 ] 85 root - INFO - spliting the data into train and test
+[ 2025-07-18 14:59:11,290 ] 88 root - INFO - loading the data to train.csv and test.csv
+[ 2025-07-18 14:59:11,505 ] 92 root - INFO - completion of ingested directory
+[ 2025-07-18 14:59:11,505 ] 29 root - INFO - Data Initiation Completed
+[ 2025-07-18 14:59:11,513 ] 40 root - INFO - Initiate the data Validation
+[ 2025-07-18 14:59:12,128 ] 42 root - INFO - data Validation Completed
+[ 2025-07-18 14:59:12,130 ] 47 root - INFO - initiated data transformation
